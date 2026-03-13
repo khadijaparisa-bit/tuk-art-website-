@@ -1,0 +1,21 @@
+let currentPage="home";
+
+document.addEventListener("DOMContentLoaded",function(){
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+});
+
+function navigate(page){
+
+document.querySelectorAll(".page-section").forEach(function(section){
+
+section.classList.remove("active");
+
+});
+
+document.getElementById("page-"+page).classList.add("active");
+
+window.scrollTo(0,0);
+
+}
