@@ -1,0 +1,21 @@
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+.page-section{
+display:none;
+}
+
+.page-section.active{
+display:block;
+}
+
+nav button{
+margin-left:10px;
+cursor:pointer;
+}
+
+nav button:hover{
+color:#5B8FB9;
+}
